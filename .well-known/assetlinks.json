@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.p2p.transfer.android",
+      "sha256_cert_fingerprints": [
+        "32:44:AC:8B:9B:14:AC:D7:78:75:F5:DF:CB:BE:1B:94:06:89:FA:40:98:C8:EB:10:64:81:3A:65:DB:BD:C8:6A"
+      ]
+    }
+  }
+]

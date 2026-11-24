@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickSync P2P Transfer — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for QuickSync P2P Transfer." />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #020617;
+      color: #e2e8f0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.7;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+    a { color: #818cf8; }
+    h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; color: #fff; }
+    h2 { font-size: 16px; margin: 30px 0 8px; color: #fff; }
+    p, li { font-size: 14px; color: #cbd5e1; }
+    ul { padding-left: 22px; }
+    .muted { color: #64748b; font-size: 12px; }
+    .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 14px; padding: 16px 18px; margin-top: 14px; }
+    code { background: #1e293b; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — QuickSync P2P Transfer</h1>
+  <p class="muted">Last updated: November 20, 2026</p>
+
+  <p>
+    QuickSync P2P Transfer ("QuickSync", "the app") transfers files and text directly between
+    your devices. This policy explains what the optional account feature collects, why, and how
+    you can delete it.
+  </p>
+
+  <h2>What the app collects</h2>
+  <p>
+    Transfers are peer-to-peer. File contents and clipboard text are sent directly to the other
+    device (or through the signaling relay when a direct connection is not possible) and are
+    never stored on the server. The account feature collects only:
+  </p>
+  <ul>
+    <li><strong>Account data:</strong> email address, display name, and a password hash (PBKDF2-HMAC-SHA256) or, when you sign in with Google, the Google account subject identifier and email address.</li>
+    <li><strong>Device directory:</strong> a random device id, device name, model, role, the device's long-term public key, the signaling server URL, and the last time the device was online.</li>
+    <li><strong>Operational logs:</strong> IP address, request path, timestamps and sign-in events, kept for security and abuse prevention.</li>
+  </ul>
+
+  <h2>Why it is collected</h2>
+  <ul>
+    <li>To sign you in and keep you signed in across your devices.</li>
+    <li>To show your devices in "Previously Paired Devices" with live online status, so one device can ask another to reconnect.</li>
+    <li>To protect the service against abuse and to diagnose failures.</li>
+  </ul>
+
+  <h2>What is shared</h2>
+  <p>
+    We do not sell your data and do not share it with advertisers. Data is processed by:
+  </p>
+  <ul>
+    <li><strong>Google Sign-In</strong>, if you choose it, to verify your identity. Google's privacy policy applies to that step.</li>
+    <li><strong>Our hosting providers</strong>, which run the signaling server and serve this website.</li>
+  </ul>
+
+  <h2>Retention</h2>
+  <p>
+    Account and device records are kept until you delete your account. Operational logs are kept
+    for a limited period for security and abuse prevention and are rotated by the operator.
+    Transferred files are not stored on the server at all.
+  </p>
+
+  <h2>Deleting your account</h2>
+  <p>
+    You can delete your account at any time:
+  </p>
+  <ul>
+    <li><strong>In the app:</strong> open the account chip in the header, choose <strong>Delete account</strong>, and confirm.</li>
+    <li><strong>On the web:</strong> use the <a href="/delete-account.html">account deletion page</a>. It works without installing the app.</li>
+  </ul>
+  <p>
+    Deletion removes your email address, display name, password hash or Google link, every
+    device registered to the account, and every sign-in session. It cannot be undone.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    Passwords are stored only as PBKDF2 hashes. Account traffic uses HTTPS/WSS. Pairing and
+    transfers use ECDH P-256 key agreement and AES-256-GCM encryption between the two devices.
+    No method of transmission or storage is completely secure, so we cannot guarantee absolute
+    security.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    QuickSync is not directed at children under 13, and we do not knowingly collect personal
+    information from them. If you believe a child has provided personal information, contact us
+    and we will delete it.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    We may update this policy. Changes are posted on this page with a new "last updated" date.
+  </p>
+
+  <h2>Contact</h2>
+  <div class="card">
+    <p style="margin: 0;">
+      Questions or deletion requests:
+      <a href="mailto:olksur@gmail.com?subject=QuickSync%20privacy">olksur@gmail.com</a>
+    </p>
+  </div>
+
+  <p class="muted">
+    QuickSync P2P Transfer · <a href="https://pairport.link">pairport.link</a> ·
+    <a href="/delete-account.html">Delete your account</a>
+  </p>
+</main>
+</body>
+</html>

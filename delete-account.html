@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete your QuickSync account</title>
+  <meta name="description" content="Delete your QuickSync P2P Transfer account and the devices linked to it." />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #020617;
+      color: #e2e8f0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+    a { color: #818cf8; }
+    h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; color: #fff; }
+    h2 { font-size: 16px; margin: 32px 0 8px; color: #fff; }
+    p, li { font-size: 14px; color: #cbd5e1; }
+    .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+    .logo {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: #020617;
+    }
+    .card {
+      background: #0f172a; border: 1px solid #1e293b; border-radius: 16px;
+      padding: 20px; margin-top: 16px;
+    }
+    .warn {
+      background: #450a0a; border: 1px solid #7f1d1d; color: #fecaca;
+      border-radius: 12px; padding: 12px 14px; font-size: 13px; margin-top: 16px;
+    }
+    label { display: block; font-size: 12px; color: #94a3b8; margin: 12px 0 4px; }
+    input[type="email"], input[type="password"] {
+      width: 100%; padding: 10px 12px; border-radius: 10px;
+      border: 1px solid #334155; background: #020617; color: #fff; font-size: 14px;
+    }
+    input:focus { outline: none; border-color: #6366f1; }
+    .check { display: flex; gap: 8px; align-items: flex-start; margin-top: 16px; font-size: 13px; color: #cbd5e1; }
+    button {
+      margin-top: 16px; width: 100%; padding: 11px 16px; border: 0; border-radius: 10px;
+      background: #dc2626; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer;
+    }
+    button:hover:not(:disabled) { background: #ef4444; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .status { margin-top: 14px; font-size: 13px; }
+    .status.error { color: #fca5a5; }
+    .status.ok { color: #6ee7b7; }
+    .muted { color: #64748b; font-size: 12px; }
+    code { background: #1e293b; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <div class="logo">Q</div>
+    <div>
+      <strong>QuickSync P2P Transfer</strong>
+      <div class="muted">Account deletion</div>
+    </div>
+  </div>
+
+  <h1>Delete your QuickSync account</h1>
+  <p>
+    This page deletes a <strong>QuickSync P2P Transfer</strong> account and the data linked to it.
+    You can use it without installing the app, for example after uninstalling it.
+  </p>
+
+  <h2>Delete from inside the app</h2>
+  <p>
+    Open QuickSync, tap the account chip in the header, then choose <strong>Delete account</strong>
+    and confirm. The app deletes the account immediately and signs this device out.
+  </p>
+
+  <h2>Delete from the web</h2>
+  <p>
+    Sign in below with the same email and password you use in the app. The account is deleted
+    immediately; there is no waiting period.
+  </p>
+
+  <div class="card">
+    <form id="delete-form" autocomplete="on">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="username" required placeholder="you@example.com" />
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="Your QuickSync password" />
+
+      <div class="check">
+        <input id="confirm" type="checkbox" required />
+        <label for="confirm" style="margin: 0; color: #cbd5e1; font-size: 13px;">
+          I understand that deleting my account cannot be undone.
+        </label>
+      </div>
+
+      <button id="submit" type="submit" disabled>Delete my account</button>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <div class="warn">
+    <strong>What is deleted:</strong> your email address, display name, password hash or Google
+    sign-in link, every device registered to the account (device name, model, public key and
+    last-seen time), and every sign-in session. The account cannot be restored.
+  </div>
+
+  <h2>What is kept</h2>
+  <p>
+    Files you transferred are never stored on the server, so there is nothing to delete there.
+    The signaling server keeps short-lived operational logs (IP address, request path and
+    sign-in events) for security and abuse prevention; these are not part of your account and
+    are rotated by the operator. See the
+    <a href="/quicksync-privacy.html">QuickSync privacy policy</a> for details.
+  </p>
+
+  <h2>Signed in with Google?</h2>
+  <p>
+    If you created the account with Google and never set a password, use the in-app
+    <strong>Delete account</strong> option, or email
+    <a href="mailto:olksur@gmail.com?subject=Delete%20my%20QuickSync%20account">olksur@gmail.com</a>
+    from the address on the account and we will delete it for you.
+  </p>
+
+  <p class="muted">
+    QuickSync P2P Transfer · <a href="https://pairport.link">pairport.link</a>
+  </p>
+</main>
+
+<script>
+  // The public signaling server. The page is static, so the endpoint is baked in here just as
+  // it is in the web app's build.
+  var API_BASE = 'https://signal.pairport.link';
+
+  var form = document.getElementById('delete-form');
+  var emailInput = document.getElementById('email');
+  var passwordInput = document.getElementById('password');
+  var confirmInput = document.getElementById('confirm');
+  var submitButton = document.getElementById('submit');
+  var statusBox = document.getElementById('status');
+
+  function setStatus(message, kind) {
+    statusBox.textContent = message;
+    statusBox.className = 'status' + (kind ? ' ' + kind : '');
+  }
+
+  function refreshEnabled() {
+    submitButton.disabled = !(
+      confirmInput.checked &&
+      emailInput.value.indexOf('@') > 0 &&
+      passwordInput.value.length >= 8
+    );
+  }
+
+  [emailInput, passwordInput, confirmInput].forEach(function (input) {
+    input.addEventListener('input', refreshEnabled);
+    input.addEventListener('change', refreshEnabled);
+  });
+
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    submitButton.disabled = true;
+    setStatus('Signing in…', '');
+
+    try {
+      var loginResponse = await fetch(API_BASE + '/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: emailInput.value.trim(),
+          password: passwordInput.value
+        })
+      });
+      var loginBody = await loginResponse.json().catch(function () { return null; });
+      if (!loginResponse.ok || !loginBody || !loginBody.token) {
+        throw new Error((loginBody && loginBody.error) || 'Wrong email or password.');
+      }
+
+      setStatus('Deleting the account…', '');
+      var deleteResponse = await fetch(API_BASE + '/account', {
+        method: 'DELETE',
+        headers: { Authorization: 'Bearer ' + loginBody.token }
+      });
+      var deleteBody = await deleteResponse.json().catch(function () { return null; });
+      if (!deleteResponse.ok) {
+        throw new Error((deleteBody && deleteBody.error) || 'The account could not be deleted.');
+      }
+
+      form.reset();
+      refreshEnabled();
+      setStatus('Your QuickSync account and its devices were deleted.', 'ok');
+    } catch (error) {
+      setStatus(error && error.message ? error.message : 'The account could not be deleted.', 'error');
+      refreshEnabled();
+    }
+  });
+</script>
+</body>
+</html>
