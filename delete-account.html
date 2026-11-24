@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delete your QuickSync account</title>
-  <meta name="description" content="Delete your QuickSync P2P Transfer account and the devices linked to it." />
+  <title>Delete your PairPort account</title>
+  <meta name="description" content="Delete your PairPort P2P Transfer account and the devices linked to it." />
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
@@ -61,20 +61,20 @@
   <div class="brand">
     <div class="logo">Q</div>
     <div>
-      <strong>QuickSync P2P Transfer</strong>
+      <strong>PairPort P2P Transfer</strong>
       <div class="muted">Account deletion</div>
     </div>
   </div>
 
-  <h1>Delete your QuickSync account</h1>
+  <h1>Delete your PairPort account</h1>
   <p>
-    This page deletes a <strong>QuickSync P2P Transfer</strong> account and the data linked to it.
+    This page deletes a <strong>PairPort P2P Transfer</strong> account and the data linked to it.
     You can use it without installing the app, for example after uninstalling it.
   </p>
 
   <h2>Delete from inside the app</h2>
   <p>
-    Open QuickSync, tap the account chip in the header, then choose <strong>Delete account</strong>
+    Open PairPort, tap the account chip in the header, then choose <strong>Delete account</strong>
     and confirm. The app deletes the account immediately and signs this device out.
   </p>
 
@@ -90,7 +90,7 @@
       <input id="email" name="email" type="email" autocomplete="username" required placeholder="you@example.com" />
 
       <label for="password">Password</label>
-      <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="Your QuickSync password" />
+      <input id="password" name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="Your PairPort password" />
 
       <div class="check">
         <input id="confirm" type="checkbox" required />
@@ -116,19 +116,19 @@
     The signaling server keeps short-lived operational logs (IP address, request path and
     sign-in events) for security and abuse prevention; these are not part of your account and
     are rotated by the operator. See the
-    <a href="/quicksync-privacy.html">QuickSync privacy policy</a> for details.
+    <a href="/pairport-privacy.html">PairPort privacy policy</a> for details.
   </p>
 
   <h2>Signed in with Google?</h2>
   <p>
     If you created the account with Google and never set a password, use the in-app
     <strong>Delete account</strong> option, or email
-    <a href="mailto:olksur@gmail.com?subject=Delete%20my%20QuickSync%20account">olksur@gmail.com</a>
+    <a href="mailto:olksur@gmail.com?subject=Delete%20my%20PairPort%20account">olksur@gmail.com</a>
     from the address on the account and we will delete it for you.
   </p>
 
   <p class="muted">
-    QuickSync P2P Transfer · <a href="https://pairport.link">pairport.link</a>
+    PairPort P2P Transfer · <a href="https://pairport.link">pairport.link</a>
   </p>
 </main>
 
@@ -193,7 +193,7 @@
 
       form.reset();
       refreshEnabled();
-      setStatus('Your QuickSync account and its devices were deleted.', 'ok');
+      setStatus('Your PairPort account and its devices were deleted.', 'ok');
     } catch (error) {
       setStatus(error && error.message ? error.message : 'The account could not be deleted.', 'error');
       refreshEnabled();
