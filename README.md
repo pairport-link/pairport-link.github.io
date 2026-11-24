@@ -1,6 +1,6 @@
 # pairport.link
 
-Static build of the QuickSync P2P Transfer web app, served by GitHub Pages at
+Static build of the PairPort web app, served by GitHub Pages at
 <https://pairport.link>.
 
 The source lives in `procks/QuickSynch`. To publish a new build:
@@ -11,4 +11,4 @@ The source lives in `procks/QuickSynch`. To publish a new build:
 
 `CNAME` pins the custom domain, `.nojekyll` keeps Jekyll from dropping
 `.well-known/`, and `.well-known/assetlinks.json` is the Android App Links
-association file for `com.p2p.transfer.android`.
+association file for `link.pairport.app`.
